@@ -1,0 +1,176 @@
+:root {
+    --websitebackgroundcolour: #f0f8ff; /**This assigns the colour to the name called websitebackgroundcolour **/
+    --font-style: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /**This assigns the font type to the name font-style**/
+    --navigationbarcolour: rgb(116, 124, 124); /**This assigns the colour to the name called navigqtion colour**/
+    --blackborders: black; /**This assigns the black colour to the name called blackborders**/
+}
+
+body {
+    margin: 0; /**this removes the default margins**/
+    padding: 0; /**This removes the default padding**/
+    background-color: var(--websitebackgroundcolour); /**This adds a background to the homepage by using the root called websitebackgroundcolour**/
+}
+
+.logo-navigationbar {
+    display: flex; /**this organises the containers horizontally**/
+}
+
+.logo-image {
+    height: 57px; /**This sets a height for the logo**/
+    width: 60px; /**This setsa width for the logo**/
+    border: solid 2px var(--blackborders); /**This sets a border for the logo, whose colour is set by using the root called blackborders**/
+    border-radius: 20px; /**This gives a circular shape to the border corners**/
+}
+
+.logo-container {
+    padding: 18px; /**This gives an extra space for the logo container**/
+}
+
+.navigationbar-container {
+    border: solid 2px var(--blackborders); /**This sets border to the navigation bar, whose colour is set by using the root called blackborders**/
+    border-radius: 10px; /**This gives a circular shape to the corners of the border**/
+    background-color: var(--navigationbarcolour); /**This gives a background colour to the navigation bar by using the root called navigationbarcolour**/
+    opacity: 0.7; /**This makes tha navigation bar a bit faded**/
+    height: 50px; /**This gives some height to the navigation bar**/
+    flex-basis: 184vh; /**This gives more width to the navigation bar so it can cover the webpage**/
+    transform: translateY(20px);/**This centralises the nasvigation bar**/
+}
+
+.hyperlink-list {
+    display: inline-block; /**This displays the hyperlinks horizontally**/
+    margin-left: 12vh; /**This gives space on the left of each hyperlink**/
+}
+
+.hyperlink-list:nth-child(6) { /**This only takes the sixth element of the class, which is the contact us hyperlink**/
+    background-color: rgb(69, 71, 71); /**This gives a background colourto the hyperlink**/
+    border-radius: 10px; /**This gives a circular shape to the background colour the hyperlink has**/
+    padding: 2px; /**This gives an extra space to the background colour hyperlink**/
+}
+
+.hyperlink {
+    text-decoration: none; /**This removes link appearance to the hypernlinks**/
+    color: white; /**This gives a white colour to the hyperlinks**/
+    font-family: var(--font-style); /**This gives a font style to the hyperlinks by using the root called font-style**/
+}
+
+.hyperlink:hover {
+    color: black; /**This gives a blacxk colour when the user hovers on the hyperlinks**/
+    transition: 0.9s; /**this gives some delay when the user hovers om the hyperlinks**/
+}
+
+.navigationbar {
+    letter-spacing:1px; /**This gives space to the hyperlinks' letters**/
+}
+
+.contactus-body {
+    width: 100vh; /**This gives a width to the contact us body**/
+    height: 115vh; /**This gives a height to the contact us body**/
+    background-color: #dfe3e6; /**This gives a background colour to the contact us body**/
+    transform:translate(46vh, 1vh); /**This centralises the contact us body**/
+    padding: 15px; /**This gives an extra space to the contact us body**/
+}
+
+p, header {
+    font-family: var(--font-style); /**This gives a font style to the customer service number and email, and their respective headers**/
+    letter-spacing: 0.5px; /**This gives a letter spacing to the customer service number and email, and their respective headers**/
+    text-align: center; /**This aligns the customer service number and email, and their respective headers to the centre**/
+    padding: 5px; /**This gives more space to the customer service number and email, and their respective headers**/
+}
+
+header {
+    font-size: 150%; /**This adjusts the the headers' font sizes**/
+}
+
+
+.contactus-details-container {
+    background-color: #eceff1; /**This gives a background colour to the contact details container**/
+    border: solid 1px var(--blackborders); /**This gives a border to the contact us details container**/
+    border-radius: 10px; /**This gives a circular shape to the border of the contact us details container**/
+} 
+
+.contactus-details {
+    padding: 20px; /**This gives an extra space to the contact us details that contains the customer service number, and email, headers, and their respective icons**/
+}
+
+.contactus-details-container header {
+    margin-top: 10px; /**This separates the header that is in the contact details container from the top**/
+
+}
+
+
+.contactus-details {
+    display: flex; /**This displays the contact us details horizontally**/
+}
+
+.mobile-number-container {
+    width: 20vh; /**This gives a width to the mobile number container**/
+}
+
+
+.mobile-number-container, .email-container {
+    transform: translateX(20vh); /**This centralises the mobile number and email containers**/
+} 
+
+.call-email-icons1 {
+    height: 60px; /**This gives a height to the call icon**/
+    width: 60px; /**This gives a width to the call icon**/
+    transform: translateX(7vh); /**This centralises the call icon**/
+}
+
+.call-email-icons2 {
+    height: 60px; /**This gives a height to the email icon**/
+    width: 60px; /**This gives a width to the email icon**/
+    transform: translateX(14.2vh); /**This centralises the email icon**/
+}
+
+.animated-logo-container {
+    background-color: #eceff1; /**This gives a background to the animated logo container**/
+    margin-top: 20px; /**This separates the container from the contact details container**/
+    border: solid 1px var(--blackborders); /**This gives a border to the animated logo container, whose colour is set by using a root called blackborders**/
+}
+
+.animated-logo {
+    transform: translateX(18vh); /**This centralises the animated logo to the centre of the contact us body**/
+    height: 30vh; /**This gives a height to the animated logo image**/
+    width: 60vh; /**This gives a width to the animated logo image**/
+    padding: 10px; /**This gives an extra space to the animated logo image**/
+}
+
+.map {
+    border: solid 1px var(--blackborders); /**This gives a border to the map container where MobileWorldStation is located by using the root called blackborders**/
+    border-radius: 10px; /**This gives a circular shapre to the border of the map container**/
+    height: 45vh; /**This gives a height to the map container**/
+    margin-top: 20px; /**This separates the map from the map header**/
+    background-color:#eceff1; /**This gives background colour to the map container**/
+    padding: 30px; /**This gives an extra space to the map container**/
+}
+
+.map header {
+    margin-top: 10px; /**This separates the header that is in the map container from the top**/
+    margin-bottom: 10px; /**This separates the header that is in the map container from the bottom**/
+}
+
+iframe {
+    border: solid 2px var(--blackborders); /**This gives a border to the map, whose colour is set by using the root called blackborders**/
+    width: 59vh; /**This gives a width to the map**/
+    height: 40vh; /**This gives a height to the map**/
+    transform:translateX(18vh); /**This centralises the map to the centre of the map container**/
+}
+
+.footer-container {
+    display: flex; /**This displays the footer horizontally**/
+    background-color: #d4dce3; /**This sets the a background colour to the footer**/
+    border-top: solid 0.2px black; /**This gives a top border to the footer**/
+    opacity: 0.7; /**This gives some transparency to the footer**/
+    height: 5vh; /**This gives a height to the footer**/
+    margin-top: 3vh; /**This gives a bit of sepraration between experts container and the footer**/
+}
+
+.copyright-mobileworldstation-name-container {
+   transform: translateX(85vh); /**This centralises the copyright company name**/
+    
+}
+
+
+
+

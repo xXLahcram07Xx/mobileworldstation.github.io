@@ -1,0 +1,135 @@
+:root {
+    --websitebackgroundcolour: #f0f8ff; /**This assigns the colour to the name called websitebackgroundcolour **/
+    --font-style: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /**This assigns the font type to the name font-style**/
+    --navigationbarcolour: rgb(116, 124, 124); /**This assigns the colour to the name called navigqtion colour**/
+    --blackborders: black; /**This assigns the black colour to the name called blackborders**/
+}
+
+body {
+    margin: 0; /**this removes the default margins**/
+    padding: 0; /**This removes the default padding**/
+    background-color: var(--websitebackgroundcolour); /**This adds a background to the homepage by using the root called websitebackgroundcolour**/
+}
+
+.logo-navigationbar {
+    display: flex; /**this organises the containers horizontally**/
+}
+
+.logo-image {
+    height: 57px; /**This sets a height for the logo**/
+    width: 60px; /**This setsa width for the logo**/
+    border: solid 2px var(--blackborders); /**This sets a border for the logo, whose colour is set by using the root called blackborders**/
+    border-radius: 20px; /**This gives a circular shape to the border corners**/
+}
+
+.logo-container {
+    padding: 18px; /**This gives an extra space for the logo container**/
+}
+
+.navigationbar-container {
+    border: solid 2px var(--blackborders); /**This sets border to the navigation bar, whose colour is set by using the root called blackborders**/
+    border-radius: 10px; /**This gives a circular shape to the corners of the border**/
+    background-color: var(--navigationbarcolour); /**This gives a background colour to the navigation bar by using the root called navigationbarcolour**/
+    opacity: 0.7; /**This makes tha navigation bar a bit faded**/
+    height: 50px; /**This gives some height to the navigation bar**/
+    flex-basis: 184vh; /**This gives more width to the navigation bar so it can cover the webpage**/
+    transform: translateY(20px);/**This centralises the nasvigation bar**/
+}
+
+.hyperlink-list {
+    display: inline-block; /**This displays the hyperlinks horizontally**/
+    margin-left: 12vh; /**This gives space on the left of each hyperlink**/
+}
+
+.hyperlink-list:first-child { /**This only takes the first element of the class, which is the about us hyperlink**/
+    background-color: rgb(69, 71, 71); /**This gives a background colourto the hyperlink**/
+    border-radius: 10px; /**This gives a circular shape to the background colour the hyperlink has**/
+    padding: 2px; /**This gives an extra space to the background colour hyperlink**/
+}
+
+.hyperlink {
+    text-decoration: none; /**This removes link appearance to the hypernlinks**/
+    color: white; /**This gives a white colour to the hyperlinks**/
+    font-family: var(--font-style); /**This gives a font style to the hyperlinks by using the root called font-style**/
+}
+
+.hyperlink:hover {
+    color: black; /**This gives a blacxk colour when the user hovers on the hyperlinks**/
+    transition: 0.9s; /**this gives some delay when the user hovers om the hyperlinks**/
+}
+
+.navigationbar {
+    letter-spacing:1px; /**This gives space to the hyperlinks' letters**/
+}
+
+.aboutus-body {
+    border: solid 1px var(--blackborders); /**This gives a border to the about us body, whose colour is set by using the root called blackborders**/
+    width: 130vh; /**This gives a width to the about us body**/
+    height: 155vh; /**This gives a height to te about us body**/
+    transform:translateX(30vh); /**This centralises the about us body to the middle of the webpage**/
+    background-color: #dfe3e6; /**This sets a background colour to the about us body**/
+}
+    
+.aboutus-background-logo-container {
+    width: 80vh; /**This gives a width to the container of the animated logo image**/
+    transform:translateX(26vh); /**This centralises the container pf the animated logo image**/
+    margin-top: 40px; /**This separates a bit from the top of the about us body**/
+}
+
+.aboutus-background-logo {
+    width: 76vh; /**This gives a width to the animated logo image**/
+    height: 40vh; /**This gives a height to the animated logo image**/
+    border: solid 2px var(--blackborders); /**This gives a border to the animated logo image, whose colour is set by using the root called blackborders**/
+}
+
+td {
+    padding: 10px; /**This gives some extra space to the columns of table**/
+    padding-top: 30px; /**This gives an extra space to the top of the columns**/
+}
+
+.expert-header {
+    transform: translateY(7vh); /**This centralises the experts heading**/
+    font-size: 3vh;  /**This increases the expert font size**/
+    text-align: center; /**This aligns the expert header to the centre of the table**/
+    font-family: var(--font-style); /**this gives a font style to the expert header by using the root called font-style**/
+}
+
+.specific-expert-header {
+    text-align: center; /**This aligns the expert headers **/
+    font-family: var(--font-style); /**This gives a font style to the expert headers**/
+    letter-spacing: 0.5px; /**This gives some space to the letter in the headers**/
+}
+
+p {
+    text-align: center; /**This aligns the the paragraphs to the centre**/
+    font-family: var(--font-style); /**This gives a font style to the paragraphs by using the root called font-style**/
+    margin-top: 40px; /**This separates the paragraphs a bit from the top**/
+}
+
+.employee-pictures {
+    width: 200px; /**This gives a width to the employee pictures**/
+    height: 200px; /**This gives a height to the employee pictures**/
+    border-radius: 120px; /**This makes the pictures to be circular**/
+    border: solid 2px var(--blackborders); /**This gives a border to the employee pictures, whose colour is set by using a root called blackborders**/
+}
+
+table {
+    border-left: solid 1px var(--blackborders); /**This gives a border on the left to the table that contains the employee section, whose colour is set by using the root called blackborders**/
+    border-right: solid 1px var(--blackborders); /**This gives a border on the right to the table that contains the employee section, whose colour is set by using the root called blackborders**/
+    padding: 0 50px 0 50px; /**This gives some extra space to the expert table**/
+    transform:translate(25.5vh, 10vh); /**This centralises the table horizontally and vertically**/
+}
+
+.footer-container {
+    display: flex; /**This displays the footer horizontally**/
+    background-color: #d4dce3; /**This sets the a background colour to the footer**/
+    border-top: solid 0.2px black; /**This gives a top border to the footer**/
+    opacity: 0.7; /**This gives some transparency to the footer**/
+    height: 5vh; /**This gives a height to the footer**/
+    margin-top: 3vh; /**This gives a bit of sepraration between experts container and the footer**/
+}
+
+.copyright-mobileworldstation-name-container {
+   transform: translateX(85vh); /**This centralises the copyright company name**/
+    
+}
